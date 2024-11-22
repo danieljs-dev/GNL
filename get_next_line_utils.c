@@ -6,7 +6,7 @@
 /*   By: dajesus- <dajesus-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 12:46:24 by dajesus-          #+#    #+#             */
-/*   Updated: 2024/11/21 14:54:25 by dajesus-         ###   ########.fr       */
+/*   Updated: 2024/11/22 20:13:36 by dajesus-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (result);
 }
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+static size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t		i;
 	size_t		src_len;

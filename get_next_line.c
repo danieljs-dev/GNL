@@ -6,7 +6,7 @@
 /*   By: dajesus- <dajesus-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 12:46:14 by dajesus-          #+#    #+#             */
-/*   Updated: 2024/11/21 16:34:38 by dajesus-         ###   ########.fr       */
+/*   Updated: 2024/11/22 19:52:45 by dajesus-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static char	*get_current_line(int fd, char *buffer, char *accumulated_content)
 		accumulated_content = ft_strjoin(temporary_content, buffer);
 		free(temporary_content);
 		temporary_content = NULL;
-		if (ft_strchr(buffer, '\n'))
+		if (ft_strchr(accumulated_content, '\n'))
 			break ;
 	}
 	return (accumulated_content);
